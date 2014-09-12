@@ -18,5 +18,5 @@ Installation
 1. clone this repository to your web server
 2. change to the directory of your clone
 3. install the composer ```curl -sS https://getcomposer.org/installer | php```
-4. install the dependencies with ```php composer install```
+4. install the dependencies with ```php composer.phar install```
 5. configure the settings in ```tl2rss.php```
