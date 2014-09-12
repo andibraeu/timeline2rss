@@ -1,0 +1,16 @@
+{
+    "name": "andibraeu/timeline2rss",
+    "description": "Read Facebook Timelines and output rss feeds of their posts",
+    "require": {
+        "facebook/php-sdk-v4": "4.0.11",
+        "argentum/feed-bundle": "1.0.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Bräu",
+            "email": "ab@andi95.de"
+        }
+    ],
+    "minimum-stability": "dev"
+}
