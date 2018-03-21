@@ -83,18 +83,16 @@ try {
         }
         $id = $dings->getProperty('id');
         $title = splitMessage($message, "title");
-				$content = splitMessage($message, "content");
-				$content=$dings->getProperty('message');
-//        $createdAt = date("U",strtotime($dings->getProperty('created_time')));
-        $updatedAt = strtotime($dings->getProperty('updated_time'));
+	$content = splitMessage($message, "content");
+	$content=$dings->getProperty('message');
+        $createdAt = $dings->getProperty('created_time')->format('U');
 //        $link = $dings->getProperty('link');
 //        $picture = $dings->getProperty('picture');
-//	print_r($dings->getProperty('from'));
         $item = new Item();
         $item
             ->title($title)
             ->url("https://facebook.com/$id")
-            ->pubDate($updatedAt)
+            ->pubDate($createdAt)
             ->guid("https://facebook.com/$id", true)
             ->description($content)
             ->appendTo($channel);
